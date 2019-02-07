@@ -1,0 +1,52 @@
+html, body {
+    font-family: 'Montseratt', sanccerif;
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+p {
+    color: #0d113d;
+    font: 300 15px/26px 'Montseratt', sanccerif;
+    margin: 0;
+}
+h1 {
+    color: #0d113d;
+    font: 800 70px/1 'Montseratt', sanccerif;
+    margin: 0;
+}
+h3 {
+    color: #0d113d;
+    font: 600 26px/1 'Montseratt', sanccerif;
+    margin: 0;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: inline-block;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+.border:before {
+    content:"";
+    background-color:#753d9d;
+    border-radius:50%;
+    position:absolute;
+    left: 0;
+    width:5px;
+    height: 100%;
+    margin:19px;
+    font-size: 0;
+}
