@@ -6,6 +6,7 @@ html, body {
 	text-align:center;
 }
 h1 {
+	font: 400 60px/1.416 'Montserrat', serif;
 	margin:100px 0 0 0;
 }
 ul {
@@ -18,4 +19,7 @@ ul {
 }
 .header_block {
 	padding: 70px;
+}
+.carousel {
+	background: url(../img/header_pic_v1.png) no-repeat;
 }
