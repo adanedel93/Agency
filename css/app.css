@@ -57,16 +57,39 @@ ul {
 	background-color: #753d9d;
 	border: 2px solid transparent;
 }
+.carousel:before {
+	content: "";
+	position: absolute;
+	background: url(../img/header_background.png) no-repeat;
+	overflow: hidden;
+	width: 5760px;
+	height: 100%;
+	transform: translateX(0px);
+	z-index: -1;
+	animation: carousel;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	/*animation-direction: alternate;*/
 
+}
 .carousel {
-	background: url(../img/header_pic_v1.png) no-repeat;
 	padding-bottom:30px;
+	
+}
+@keyframes carousel {
+	from {transform: translateX(-960px);}
+	to {transform: translateX(-960px);}
+	22% {transform: translateX(-960px);}
+	33% {transform: translateX(-2880px);}
+	55% {transform: translateX(-2880px);}
+	66% {transform: translateX(-4800px);}
+	88% {transform: translateX(-4800px);}
 }
 .progress {
 	max-height: 7px;
 	max-width: 233px;
-	margin-top: 136px;	
-	
+	margin-top: 136px;		
 	background-color: transparent;
 }
 .progress .column {
@@ -75,7 +98,22 @@ ul {
 	max-width : 68px;
 	margin-left: 7px;
 	margin-right: 7px;
+	animation: progress;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-timing-function: step-start;
+	/*animation-direction: alternate;*/
 }
+@keyframes progress {
+	from {background-color: #827e87;}
+	to {background-color: #827e87;}
+	2% {background-color: #753d9d;}
+	22% {background-color: #753d9d;}
+	40% {background-color: #827e87;}
+}
+
+.progress .column:nth-child(2) {animation-delay: 10s;}
+.progress .column:nth-child(3) {animation-delay: 20s;}
 .we_are {
 }
 
