@@ -23,6 +23,7 @@ text {
 }
 nav {
 	margin-bottom: 220px;
+	transform: translateX (20px);
 }
 ul {
 	margin: 0;
@@ -34,13 +35,15 @@ ul {
 	max-width: 1140px;
 	margin:auto;
 	}
-
+.logo {
+	float:left;
+}
 .nav {
 	color: #ffffff;
 	text-transform: uppercase;
 	font: 400 15px/1.416 'Montserrat', serif;
 }
-.nav li:first-child {color: #753d9d;}
+.nav li:hover {color: #753d9d;}
 .button {
 	 height:50px;
 	 border: 2px solid;
@@ -101,7 +104,7 @@ ul {
 	animation: progress;
 	animation-duration: 30s;
 	animation-iteration-count: infinite;
-	animation-timing-function: step-start;
+	animation-timing-function: ease;
 	/*animation-direction: alternate;*/
 }
 @keyframes progress {
@@ -114,6 +117,29 @@ ul {
 
 .progress .column:nth-child(2) {animation-delay: 10s;}
 .progress .column:nth-child(3) {animation-delay: 20s;}
+
+.menu_btn {
+	width: 17px;
+	height: 13px;
+	cursor: pointer;
+	margin: 5px;
+	background:#fff;
+}
+
+.menu_btn span {
+	display: block;
+	background: #ff3264;
+	height: 2px;
+	width: 17px;
+	transform:translate(0,-5px) rotate(0deg);	
+}
+.menu_btn:hover,
+.menu_btn:active span {
+	transform:translate(0,-5px) rotate(45deg);		
+}
+
+
+
 .we_are {
 }
 
